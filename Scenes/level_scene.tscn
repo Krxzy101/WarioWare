@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://bik2i06hm3ucp"]
 
-[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://WarioBG.jpeg" id="1_tumq0"]
-[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Garlic Colored.svg" id="2_k5f4k"]
+[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://WarioBG.jpeg" id="1_cn3xy"]
+[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Garlic Colored.svg" id="2_c7xwe"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Level" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1150.0
 offset_bottom = 642.0
-texture = ExtResource("1_tumq0")
+texture = ExtResource("1_cn3xy")
 expand_mode = 1
 
 [node name="GarlicContainer" type="HBoxContainer" parent="."]
@@ -19,23 +19,23 @@ offset_bottom = 279.0
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
-texture = ExtResource("2_k5f4k")
+texture = ExtResource("2_c7xwe")
 
 [node name="Garlic2" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
-texture = ExtResource("2_k5f4k")
+texture = ExtResource("2_c7xwe")
 
 [node name="Garlic3" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
-texture = ExtResource("2_k5f4k")
+texture = ExtResource("2_c7xwe")
 
 [node name="Garlic4" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
-texture = ExtResource("2_k5f4k")
+texture = ExtResource("2_c7xwe")
 
 [node name="Garlic5" type="TextureRect" parent="GarlicContainer"]
 layout_mode = 2
-texture = ExtResource("2_k5f4k")
+texture = ExtResource("2_c7xwe")
 
 [node name="Level" type="RichTextLabel" parent="."]
 offset_left = 516.0
