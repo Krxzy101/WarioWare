@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://bik2i06hm3ucp"]
+
+[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://WarioBG.jpeg" id="1_tumq0"]
+[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Garlic Colored.svg" id="2_k5f4k"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 642.0
+texture = ExtResource("1_tumq0")
+expand_mode = 1
+
+[node name="GarlicContainer" type="HBoxContainer" parent="."]
+offset_left = 103.0
+offset_top = 47.0
+offset_right = 1039.0
+offset_bottom = 279.0
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer"]
+layout_mode = 2
+texture = ExtResource("2_k5f4k")
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer"]
+layout_mode = 2
+texture = ExtResource("2_k5f4k")
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer"]
+layout_mode = 2
+texture = ExtResource("2_k5f4k")
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer"]
+layout_mode = 2
+texture = ExtResource("2_k5f4k")
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer"]
+layout_mode = 2
+texture = ExtResource("2_k5f4k")
+
+[node name="Level" type="RichTextLabel" parent="."]
+offset_left = 516.0
+offset_top = 305.0
+offset_right = 676.0
+offset_bottom = 372.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="."]
+offset_left = 538.0
+offset_top = 461.0
+offset_right = 629.0
+offset_bottom = 526.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0:00"
