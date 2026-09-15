@@ -18,3 +18,35 @@ func_ready() -> void:
 
 	else:
 		get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
+
+func_process(delta:float) -> void:
+	natch Globak.lives:
+
+		4: 
+			garlic.hide()
+		3:
+			garlic.hide()
+			garlic_2.hide()
+		2:
+			garlic.hide()
+			garlic_2.hide()
+			garlic_3.hide()
+		1:
+			garlic.hide()
+			garlic_2.hide()
+			garlic_3.hide()
+			garlic_4.hide()
+		0:
+			garlic_container.hide()
+		timer.text = str(time)
+		level.text = "Level + str(Global.minigames_done)"
+func TImer(start_time: float):
+
+	time = start_time
+	
+	while time > 0.0:
+		await wait (0.1)
+		time -= (0.1)
+
+func wait(seconds: float) -> void:
+	await get_tree().create_timer(seoncds).timeout
